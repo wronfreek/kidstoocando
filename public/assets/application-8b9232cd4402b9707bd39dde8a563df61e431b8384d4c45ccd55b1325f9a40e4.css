@@ -1,0 +1,404 @@
+/* line 1, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/clouds.sass */
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 8, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/clouds.sass */
+[class^="cloud-"] {
+  position: absolute;
+  right: 120%;
+  width: 200px;
+  height: 60px;
+  background: #fff;
+  -webkit-border-radius: 200px;
+  border-radius: 200px;
+}
+/* line 16, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/clouds.sass */
+[class^="cloud-"]:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  width: 100px;
+  height: 80px;
+  background: #fff;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+/* line 29, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/clouds.sass */
+[class^="cloud-"]:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  width: 100px;
+  height: 80px;
+  background: #fff;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  transform: rotate(30deg);
+  top: -55px;
+  left: auto;
+  right: 15px;
+  width: 120px;
+  height: 120px;
+}
+
+/* line 48, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/clouds.sass */
+.cloud-1 {
+  top: 50px;
+  -webkit-animation: moveclouds 30s linear infinite;
+  -moz-animation: moveclouds 30s linear infinite;
+  -o-animation: moveclouds 30s linear infinite;
+  animation: moveclouds 30s linear infinite;
+}
+
+/* line 55, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/clouds.sass */
+.cloud-2 {
+  top: 100px;
+  opacity: 0.8;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-animation: moveclouds 45s linear infinite;
+  -moz-animation: moveclouds 45s linear infinite;
+  -o-animation: moveclouds 45s linear infinite;
+  animation: moveclouds 45s linear infinite;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+/* line 69, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/clouds.sass */
+.cloud-3 {
+  top: 150px;
+  opacity: 0.6;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-animation: moveclouds 40s linear infinite;
+  -moz-animation: moveclouds 40s linear infinite;
+  -o-animation: moveclouds 40s linear infinite;
+  animation: moveclouds 40s linear infinite;
+}
+
+/* line 80, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/clouds.sass */
+.cloud-4 {
+  top: 200px;
+  opacity: 0.75;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  -webkit-animation: moveclouds 26s linear infinite;
+  -moz-animation: moveclouds 26s linear infinite;
+  -o-animation: moveclouds 26s linear infinite;
+  animation: moveclouds 26s linear infinite;
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  animation-delay: 8s;
+}
+
+@-webkit-keyframes moveclouds {
+  0% {
+    right: -20%;
+  }
+  100% {
+    right: 120%;
+  }
+}
+@-moz-keyframes moveclouds {
+  0% {
+    right: -20%;
+  }
+  100% {
+    right: 120%;
+  }
+}
+@-o-keyframes moveclouds {
+  0% {
+    right: -20%;
+  }
+  100% {
+    right: 120%;
+  }
+}
+@font-face {
+  font-family: "proxima";
+  src: url(/assets/ProximaNovaSoft-Regular-5ef4354cf9c34c84bdeef5e4f2c1549f542c18a17a919d83e9ce246f499bf4bf.otf);
+}
+/* line 5, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: white;
+  font-family: proxima;
+  -webkit-font-smoothing: antialiased;
+  color: #252729;
+}
+
+/* line 14, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+h1, h2, h3, h4, p, ul, li, div {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 18, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+body {
+  padding: 1px;
+}
+
+/* line 21, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+header {
+  position: fixed;
+  height: 85px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  will-change: padding;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 2px rgba(6, 4, 8, 0.15);
+  font-size: 0;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+}
+/* line 39, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+header.slideDown {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  opacity: 1;
+}
+/* line 44, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+header.slideUp {
+  transform: translateY(-115px);
+  -webkit-transform: translateY(-115px);
+  -moz-transform: translateY(-115px);
+  opacity: 0;
+}
+/* line 49, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+header .header-container {
+  padding: 0 40px;
+}
+/* line 51, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+header .logo {
+  display: inline-block;
+  padding: 11px;
+}
+/* line 54, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+header .logo img {
+  display: block;
+  width: 60px;
+}
+/* line 57, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+header nav {
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+}
+/* line 66, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+header nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 18px;
+}
+/* line 70, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+header nav ul li a {
+  color: #252729;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 76, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+header nav ul li a:hover {
+  opacity: 0.7;
+}
+
+/* line 79, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* line 86, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#hero {
+  background-color: #61c7ff;
+  min-height: 100vh;
+  position: relative;
+}
+/* line 90, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#hero .section-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  max-width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  z-index: 20;
+}
+/* line 104, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#hero .section-wrapper h1 {
+  color: white;
+  width: calc(60% - 55px);
+  font-size: 35px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+}
+/* line 111, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#hero .section-wrapper img {
+  width: 40%;
+  display: inline-block;
+  vertical-align: bottom;
+  max-width: 350px;
+}
+/* line 116, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#hero .clouds {
+  top: 30%;
+  opacity: 0.3;
+}
+
+/* line 120, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#discover,
+section#together,
+section#contact {
+  padding: 80px 30px;
+  color: #252729;
+  position: relative;
+  overflow: auto;
+}
+/* line 127, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#discover .section-wrapper,
+section#together .section-wrapper,
+section#contact .section-wrapper {
+  overflow: inherit;
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
+}
+/* line 132, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#discover .section-wrapper img,
+section#together .section-wrapper img,
+section#contact .section-wrapper img {
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 136, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#discover .section-wrapper .text-wrapper,
+section#together .section-wrapper .text-wrapper,
+section#contact .section-wrapper .text-wrapper {
+  display: inline-block;
+  width: 48%;
+  text-align: left;
+  vertical-align: middle;
+}
+/* line 141, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#discover .section-wrapper h2,
+section#together .section-wrapper h2,
+section#contact .section-wrapper h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+/* line 144, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#discover .section-wrapper p,
+section#together .section-wrapper p,
+section#contact .section-wrapper p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* line 148, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#discover {
+  background-color: #FFF4CC;
+}
+/* line 151, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#discover img {
+  margin-left: 5%;
+  max-width: 420px;
+}
+
+/* line 155, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#together {
+  background-color: #FFC3CB;
+}
+/* line 158, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#together img {
+  margin-right: 5%;
+  max-width: 380px;
+}
+
+/* line 162, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#contact {
+  text-align: center;
+  background-color: cornflowerblue;
+  color: white;
+}
+/* line 166, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#contact h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+/* line 169, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#contact .button {
+  display: inline-block;
+  border-radius: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 14px 30px;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+/* line 181, /Users/wronfreek/Desktop/github/kidstoocando/app/assets/stylesheets/main.sass */
+section#contact .button:hover {
+  border: 2px solid white;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

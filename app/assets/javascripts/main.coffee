@@ -5,3 +5,5 @@ $ ->
     'classes':
       'pinned': 'slideDown'
       'unpinned': 'slideUp'
+
+  alert('test')
