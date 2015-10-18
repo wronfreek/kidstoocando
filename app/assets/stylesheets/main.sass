@@ -54,6 +54,14 @@ header
     img
       display: block
       width: 60px
+      transition: all .2s ease-out
+      -webkit-transition: all .2s ease-out
+      -moz-transition: all .2s ease-out
+    &:hover
+      img
+        transform: scale(1.1,1.1)
+        -webkit-transform: scale(1.1,1.1)
+        -moz-transform: scale(1.1,1.1)
   nav
     display: inline-block
     position: absolute
@@ -147,21 +155,22 @@ section#contact
 
 section#discover
   //background-color: #FFFAE8
-  background-color: #FFF4CC
+  //background-color: #FFF4CC
+  background-color: whitesmoke
   img
     margin-left: 5%
     max-width: 420px
 
 section#together
   //background-color: #E8FBFF
-  background-color: #FFC3CB
+  //background-color: #FFC3CB
   img
     margin-right: 5%
     max-width: 380px
 
 section#contact
   text-align: center
-  background-color: cornflowerblue
+  background-color: #61c7ff
   color: white
   h2
     font-size: 30px

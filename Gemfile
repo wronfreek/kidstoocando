@@ -38,6 +38,7 @@ gem 'simple_form'
 gem 'mail_form'
 
 gem 'slim-rails'
+gem 'modernizr-rails'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
