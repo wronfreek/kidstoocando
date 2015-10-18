@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'main#index'
 
   post 'contact' => 'main#contact', :as => 'contacts'
+  get 'about' => 'about#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

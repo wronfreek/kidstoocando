@@ -4,14 +4,15 @@ html
     title Kids Too Can Do
     = stylesheet_link_tag    'application', media: 'all'
     = csrf_meta_tags
-  body
+  body class=(body_class)
     header
       .header-container
         a.logo href="/"
           = image_tag('logo.svg')
+          span.name Kids Too Can Do
         nav
           ul
-            //li = link_to 'More info', 'about'
+            li = link_to 'More info', 'about'
             li = link_to 'Contact', 'mailto:kidstoocando@gmail.com'
     .main
       == yield
