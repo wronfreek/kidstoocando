@@ -1,0 +1,182 @@
+@font-face
+  font-family: "proxima"
+  src: url('ProximaNovaSoft-Regular.otf')
+
+html, body
+  margin: 0
+  padding: 0
+  height: 100%
+  background: white
+  font-family: proxima
+  -webkit-font-smoothing: antialiased
+  color: #252729
+
+h1, h2, h3, h4, p, ul, li, div
+  margin: 0
+  padding: 0
+
+body
+  padding: 1px
+
+header
+  position: fixed
+  height: 85px
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 100
+  will-change: padding
+  overflow: hidden
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  background: rgba(255,255,255,.9)
+  box-shadow: 0 0 2px rgba(6,4,8,0.15)
+  font-size: 0
+  transition: all .2s ease-out
+  -webkit-transition: all .2s ease-out
+  -moz-transition: all .2s ease-out
+  &.slideDown
+    transform: translateY(0)
+    -webkit-transform: translateY(0)
+    -moz-transform: translateY(0)
+    opacity: 1
+  &.slideUp
+    transform: translateY(-115px)
+    -webkit-transform: translateY(-115px)
+    -moz-transform: translateY(-115px)
+    opacity: 0
+  .header-container
+    padding: 0 40px
+  .logo
+    display: inline-block
+    padding: 11px
+    img
+      display: block
+      width: 60px
+  nav
+    display: inline-block
+    position: absolute
+    right: 40px
+    top: 50%
+    transform: translateY(-50%)
+    -webkit-transform: translateY(-50%)
+    -moz-transform: translateY(-50%)
+    ul
+      li
+        list-style-type: none
+        display: inline-block
+        font-size: 18px
+        a
+          color: #252729
+          display: block
+          padding: 20px
+          text-decoration: none
+          cursor: pointer
+          &:hover
+            opacity: .7
+
+section
+  width: 100%
+  overflow: hidden
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+
+section#hero
+  background-color: #61c7ff
+  min-height: 100vh
+  position: relative
+  .section-wrapper
+    position: absolute
+    bottom: 0
+    width: 100%
+    padding: 0 30px
+    box-sizing: border-box
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    max-width: 1200px
+    left: 50%
+    transform: translateX(-50%)
+    -webkit-transform: translateX(-50%)
+    -moz-transform: translateX(-50%)
+    z-index: 20
+    h1
+      color: white
+      width: calc(60% - 55px)
+      font-size: 35px
+      display: inline-block
+      vertical-align: top
+      margin-left: 50px
+    img
+      width: 40%
+      display: inline-block
+      vertical-align: bottom
+      max-width: 350px
+  .clouds
+    top: 30%
+    opacity: .3
+
+section#discover,
+section#together,
+section#contact
+  padding: 80px 30px
+  color: #252729
+  position: relative
+  overflow: auto
+  .section-wrapper
+    overflow: inherit
+    margin: 0 auto
+    max-width: 960px
+    text-align: center
+    img
+      width: 45%
+      display: inline-block
+      vertical-align: middle
+    .text-wrapper
+      display: inline-block
+      width: 48%
+      text-align: left
+      vertical-align: middle
+    h2
+      font-size: 30px
+      margin-bottom: 20px
+    p
+      font-size: 18px
+      line-height: 28px
+
+section#discover
+  //background-color: #FFFAE8
+  background-color: #FFF4CC
+  img
+    margin-left: 5%
+    max-width: 420px
+
+section#together
+  //background-color: #E8FBFF
+  background-color: #FFC3CB
+  img
+    margin-right: 5%
+    max-width: 380px
+
+section#contact
+  text-align: center
+  background-color: cornflowerblue
+  color: white
+  h2
+    font-size: 30px
+    margin-bottom: 30px
+  .button
+    display: inline-block
+    border-radius: 100px
+    border: 2px solid rgba(255,255,255,.5)
+    padding: 14px 30px
+    box-shadow: none
+    transition: all .3s ease
+    -webkit-transition: all .3s ease
+    font-size: 20px
+    cursor: pointer
+    text-decoration: none
+    color: white
+    &:hover
+      border: 2px solid white

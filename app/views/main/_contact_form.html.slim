@@ -1,0 +1,18 @@
+/ contact form
+.container
+  .row
+    .col-md-4.col-md-offset-4
+      .contact-form
+        h2.text-center Contact me
+        = simple_form_for @contact do |f|
+          .form-group
+            = f.input :name, required: true, input_html: { class: "form-control" }, placeholder: 'Full Name'
+
+          .form-group
+            = f.input :email, required: true, input_html: { class: "form-control" }, placeholder: 'email@example.com'
+
+          = f.label :message
+          .form-group
+            = f.text_area :message, required: false, input_html: { class: "form-control" }, placeholder: 'Leave your message to me...'
+          .form-group
+            = f.button :submit, 'Send', class: 'btn btn-lg btn-primary'

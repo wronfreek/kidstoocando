@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Slim Examples
+    meta name="keywords" content="template language"
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  body
+    header
+      .header-container
+        a.logo
+          = image_tag('logo.svg')
+        nav
+          ul
+            //li = link_to 'More info', 'about'
+            li = link_to 'Contact', 'mailto:kidstoocando@gmail.com'
+    .main
+      == yield
