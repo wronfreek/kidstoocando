@@ -1,7 +1,9 @@
 section id="hero"
   .section-wrapper
     = image_tag('kid-hero.svg', class: 'kid-hero')
-    h1 Kids Too Can Do is an intiative to engage and inspire kids through arts and technology.
+    h1
+      strong Kids Too Can Do
+      | &nbsp;is an intiative to engage and inspire kids through arts and technology.
   .clouds
     .cloud-1 data-speed="35000"
     .cloud-2 data-delay="15000" data-speed="45000"
@@ -10,13 +12,14 @@ section id="hero"
 
 section id="discover"
   .section-wrapper
+    = image_tag('kid-discover.svg', class: 'kid-discover for-mobile')
     .text-wrapper
       h2 Discover through experience.
       p
         | We help kids discover their talents and passion by providing opportunities for them to experience different creative and educational activities such as coding, design and more.
       p
         | We especially aim to reach and connect with kids who don't have the resources or are in underserved communities.
-    = image_tag('kid-discover.svg', class: 'kid-discover')
+    = image_tag('kid-discover.svg', class: 'kid-discover for-non-mobile')
 
 section id="together"
   .section-wrapper
@@ -27,6 +30,7 @@ section id="together"
         | We partner with individuals or groups who share similar goals. By working together, sharing knowledge, resources and tools, we can affect more young lives.
 
 section id="contact"
-  h2
-    | We create opportunities for kids to create.
-  a.button href="mailto:kidstoocando@gmail.com" Get in touch
+  .section-wrapper
+    h2
+      | We create opportunities for kids to create.
+    a.button href="mailto:kidstoocando@gmail.com" Get in touch

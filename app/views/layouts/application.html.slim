@@ -2,20 +2,12 @@ doctype html
 html
   head
     title Kids Too Can Do
-    = stylesheet_link_tag    'application', media: 'all'
+    meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"
+    = stylesheet_link_tag 'application', media: 'all'
     = favicon_link_tag 'favicon.ico'
     = csrf_meta_tags
   body class=(body_class)
-    header
-      .header-container
-        a.logo href="/"
-          = image_tag('logo.svg')
-          span.name Kids Too Can Do
-        nav
-          ul
-            li = link_to 'More info', 'about'
-            li = link_to 'Contact', 'mailto:kidstoocando@gmail.com'
-    .main
-      == yield
+    = render :partial => 'layouts/header'
+    == yield
 
     = javascript_include_tag 'application'

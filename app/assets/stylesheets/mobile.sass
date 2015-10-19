@@ -1,0 +1,154 @@
+@import "mixins.sass"
+
+@media only screen and (max-width: 736px)
+  header
+    padding: 0 15px
+    height: 55px
+    background: white
+    .logo
+      img
+        width: 35px
+      .name
+        display: none
+    &.slideDown
+      @include css3(transform, none)
+      opacity: 1
+    &.slideUp
+      @include css3(transform, none)
+      opacity: 1
+    nav
+      display: none
+    .menu
+      display: inline-block
+      position: absolute
+      top: 50%
+      @include css3(transform, translateY(-50%))
+      right: 15px
+      span
+        display: block
+        height: 3px
+        width: 24px
+        margin-bottom: 3px
+        background: #697779
+        -moz-border-radius: 5px
+        -webkit-border-radius: 5px
+        border-radius: 5px
+        @include css3(transform-origin, 50% 50%)
+        @include css3(transition, all 0.15s)
+
+  nav.for-mobile
+    position: fixed
+    top: 55px
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(255,255,255,.95)
+    z-index: 900
+    @include css3(transform, none)
+    -webkit-transform: translateY(-100%)
+    -webkit-transition: -webkit-transform .4s ease-in-out, visibility .4s ease-in-out
+    vertical-align: baseline
+    visibility: hidden
+    ul
+      text-align: center
+      margin-top: 20px
+      li
+        display: block
+        a
+          padding: 20px
+          display: block
+          text-decoration: none
+          font-size: 27px
+          font-weight: bold
+          text-transform: uppercase
+          color: #697779
+  .show-nav
+    nav.for-mobile
+      -webkit-transform: translateY(0)
+      visibility: visible
+    .menu
+      span
+        @include css3(transition, all 0.15s)
+        &:nth-child(1)
+          @include css3(transform, rotate(-45deg) translateY(8px))
+        &:nth-child(2)
+          opacity: 0
+        &:nth-child(3)
+          @include css3(transform, rotate(45deg) translateY(-9px))
+
+
+  .main
+    section#discover,
+    section#together,
+    section#contact
+      padding: 50px 30px
+      .section-wrapper
+        h2
+          font-size: 20px
+          line-height: 30px
+          margin-bottom: 20px
+        p
+          font-size: 15px
+          line-height: 25px
+
+    section#discover,
+    section#together
+      .section-wrapper
+        .text-wrapper
+          width: 100%
+          display: block
+          text-align: center
+        img
+          margin: 0
+          width: 80%
+          margin-bottom: 25px
+          &.for-mobile
+            display: inline-block !important
+
+
+    section#hero
+      .section-wrapper
+        position: static
+        @include css3(transform, none)
+        h1
+          position: absolute
+          margin: 0
+          top: 32%
+          width: 100%
+          @include css3(transform, translateY(-50%))
+          font-size: 23px
+          text-align: center
+          left: 0
+          padding: 30px
+          @include css3(box-sizing, border-box)
+          line-height: 30px
+          strong
+            display: block
+            text-decoration: none
+        img
+          width: 70%
+          display: inline-block
+          vertical-align: bottom
+          max-width: 250px
+          bottom: 0
+          position: absolute
+          left: 40%
+          @include css3(transform, translateX(-50%))
+          z-index: 100
+
+    section#contact
+      .button
+        padding: 12px 24px
+        font-size: 15px
+
+  .about
+    .container
+      margin-top: 50px
+      padding: 50px 30px
+      h1
+        font-size: 20px
+        line-height: 30px
+        margin-bottom: 20px
+      p
+        font-size: 15px
+        line-height: 25px

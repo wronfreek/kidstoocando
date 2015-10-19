@@ -1,0 +1,28 @@
+@font-face
+  font-family: "proxima"
+  src: font-url('ProximaNovaSoft-Regular.otf')
+
+html, body
+  margin: 0
+  padding: 0
+  height: 100%
+  background: white
+  font-family: proxima
+  -webkit-font-smoothing: antialiased
+  color: #465058
+
+h1, h2, h3, h4, p, ul, li, div
+  margin: 0
+  padding: 0
+
+body
+  padding: 1px
+
+.for-mobile
+  display: none !important
+
+@media only screen and (max-width: 736px)
+  .for-mobile
+    display: block !important
+  .for-non-mobile
+    display: none !important
