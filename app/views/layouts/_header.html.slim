@@ -9,10 +9,11 @@ header
       span
   nav
     ul
-      li = link_to 'More info', 'about'
+      li = link_to 'More info', '/about', class: (body_class)
       li = link_to 'Contact', 'mailto:kidstoocando@gmail.com'
 
 nav.mobile-nav.for-mobile
   ul
-    li = link_to 'More info', 'about'
+    li = link_to 'Home', '/'
+    li = link_to 'More info', '/about'
     li = link_to 'Contact', 'mailto:kidstoocando@gmail.com'
