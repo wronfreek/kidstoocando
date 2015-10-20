@@ -4,7 +4,7 @@ require ::File.expand_path('../config/environment', __FILE__)
 
 use Rack::ReverseProxy do
   reverse_proxy(/^\/blog(\.*)$/,
-    'http://aqueous-caverns-2463.herokuapp.com$1',
+    'http://kidstoocanblog.herokuapp.com$1',
     opts = {:preserve_host => true})
 end
 
