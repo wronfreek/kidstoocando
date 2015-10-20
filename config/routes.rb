@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   post 'contact' => 'main#contact', :as => 'contacts'
   get 'about' => 'about#index'
-  match "/blog" => redirect("/blog/")
+  match 'blog' => redirect('/blog'), :via => [:get], :as => 'blog'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
