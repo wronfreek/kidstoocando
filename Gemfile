@@ -39,6 +39,7 @@ gem 'mail_form'
 
 gem 'slim-rails'
 gem 'modernizr-rails'
+gem "rack-reverse-proxy", :require => "rack/reverse_proxy"  
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
