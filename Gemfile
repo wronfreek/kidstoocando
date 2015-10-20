@@ -41,6 +41,7 @@ gem 'slim-rails'
 gem 'modernizr-rails'
 gem 'tumblr_client'
 gem 'kaminari'
+gem 'font-awesome-sass'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record

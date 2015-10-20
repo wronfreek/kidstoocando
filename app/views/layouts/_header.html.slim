@@ -3,17 +3,18 @@ header
     = image_tag('logo.svg')
     span.name Kids Too Can Do
   a.menu onclick="$('body').toggleClass('show-nav')"
-    em.menu-wrapper
+    em.hamburger
       span
       span
       span
   nav
     ul
-      li = link_to 'More info', '/about', class: (body_class)
+      li = link_to 'Home', '/', class: (body_class=='main' ? 'active' : nil)
+      li = link_to 'More info', '/about', class: (body_class=='about' ? 'active' : nil)
       li = link_to 'Contact', 'mailto:kidstoocando@gmail.com'
 
 nav.mobile-nav.for-mobile
   ul
-    li = link_to 'Home', '/'
-    li = link_to 'More info', '/about'
+    li = link_to 'Home', '/', class: (body_class=='main' ? 'active' : nil)
+    li = link_to 'More info', '/about', class: (body_class=='about' ? 'active' : nil)
     li = link_to 'Contact', 'mailto:kidstoocando@gmail.com'

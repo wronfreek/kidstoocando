@@ -57,10 +57,16 @@ header
         display: inline-block
         font-size: 18px
         a
-          color: #627073
+          color: #465058
           display: block
           padding: 20px
           text-decoration: none
           cursor: pointer
+          &.active
+            color: royalblue
+            &:hover
+              opacity: 1
           &:hover
             opacity: .7
+          &:focus
+            outline: none

@@ -10,11 +10,6 @@ class BlogController < ApplicationController
     @posts = @myClient.posts("kidstoocando.tumblr.com")
     @posts = Kaminari.paginate_array(@posts["posts"]).page(params[:page]).per(10)
 
-    print '------------------------------'
-    @posts.each do |post|
-      print post['title']
-    end
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }

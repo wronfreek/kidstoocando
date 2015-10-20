@@ -1,3 +1,5 @@
 .container
   - @posts.each do |post|
-    = post['title']
+    div
+      - if post['body_abstract']
+        = post['body_abstract'].html_safe
