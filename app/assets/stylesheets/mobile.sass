@@ -3,7 +3,7 @@
 @media only screen and (max-width: 736px)
   header
     padding: 0 15px
-    height: 55px
+    height: 50px
     background: white
     .logo
       img
@@ -52,7 +52,7 @@
 
   nav.for-mobile
     position: fixed
-    top: 55px
+    top: 50px
     left: 0
     right: 0
     bottom: 0
@@ -128,6 +128,7 @@
 
 
     section#hero
+      min-height: 100%
       .section-wrapper
         position: static
         @include css3(transform, none)
@@ -140,14 +141,14 @@
           font-size: 23px
           text-align: center
           left: 0
-          padding: 30px
+          padding: 20px
           @include css3(box-sizing, border-box)
           line-height: 30px
           strong
             display: block
             text-decoration: none
         img
-          width: 70%
+          width: 60%
           display: inline-block
           vertical-align: bottom
           max-width: 250px
@@ -161,6 +162,7 @@
       .button
         padding: 12px 24px
         font-size: 16px
+        line-height: 16px
         i.fa-chevron-right
           font-size: 10px
           line-height: 10px
