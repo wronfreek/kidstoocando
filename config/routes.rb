@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   post 'contact' => 'main#contact', :as => 'contacts'
   get 'about' => 'about#index'
   get 'blog' => 'blog#index'
+  get 'blog/post/:id' => 'blog#post'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
