@@ -8,7 +8,7 @@ class BlogController < ApplicationController
     })
 
     @posts = @myClient.posts("kidstoocando.tumblr.com")
-    @posts = Kaminari.paginate_array(@posts["posts"]).page(params[:page]).per(10)
+    @posts = Kaminari.paginate_array(@posts["posts"]).page(params[:page]).per(2)
 
     respond_to do |format|
       format.html

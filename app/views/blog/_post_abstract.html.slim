@@ -1,0 +1,9 @@
+- @posts.each do |post|
+  .post
+    h2.title = post['title']
+    span.date
+      | Published at&nbsp;
+      = (post['date']).to_date
+    - if post['body_abstract']
+      = post['body_abstract'].html_safe
+    a.read-more href="/blog/post/#{post['id']}" Read more

@@ -1,0 +1,8 @@
+$("<%=j render(:partial => 'post_abstract', :object => @posts) %>").appendTo($('.posts-container'));
+
+<% if @posts.last_page? %>
+  $('.pagination').html('');
+  $('.preloader').hide();
+<% else %>
+  $('.pagination').html('<%=j link_to_next_page(@posts, 'Next Page', :remote => true) %>');
+<% end %>
